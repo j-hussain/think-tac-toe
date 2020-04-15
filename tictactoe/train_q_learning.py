@@ -93,3 +93,5 @@ while True:
 
     # 1 signifies Q_Learning - easier to deal with integer identifiers
     previous_algorithms["1"] = [nought_player, cross_player]
+    
+# INCOMPLETE !
