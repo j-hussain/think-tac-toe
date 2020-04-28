@@ -210,7 +210,7 @@ class Ui_menu(object):
         menu.setWindowTitle(_translate("menu", "Noughts and Crosses Menu"))
         self.titleLabel.setText(_translate("menu", "Play Noughts and Crosses"))
         self.playButton.setText(_translate("menu", "Play Game"))
-        self.titleLabel2.setText(_translate("menu", "By Joshua Hawking"))
+        self.titleLabel2.setText(_translate("menu", "By Jabir Hussain"))
         self.playerLabel.setText(_translate("menu", "Who would you like to play as?"))
         self.crossLabel.setText(_translate("menu", "Cross"))
         self.noughtLabel.setText(_translate("menu", "Nought"))
