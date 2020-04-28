@@ -29,7 +29,7 @@ BOARD_LAYOUT = {
     }
 }
 
-PLAYING_TACTIC = ["LEARN", "EXPLOIT", "RANDOM MOVE"]
+PLAYING_TACTIC = [["LEARN",0], ["EXPLOIT",1], ["RANDOM MOVE",2]]
 
 # Constants used for Q-Learning
 RL_CONSTANTS = {
@@ -40,3 +40,17 @@ RL_CONSTANTS = {
     "EPSILON": 0.135
 }
 
+DESCRIPTIONS = {
+    "RL" : {
+        "Algorithm" : "Reinforced Q-Learning",
+        "Description" : "A method of iterative machine learning, which references previously played moves to maximise the greatest possible outcome"
+    },
+    "Minimax" : {
+        "Algorithm" : "Minimax (Negamax Form)",
+        "Description" : "The Minimax algorithm is a depth-first algorithm which considers all possible outcomes, choosing the move with the best probability of success"
+    },
+    "MCTS" : {
+        "Algorithm" : "Monte Carlo Tree Search",
+        "Description" : "The MCTS Algorithm chooses possible moves, and simulates the moves until a win is met. It then performs a statistical analysis to evaluate which move is the best move to play"
+    }
+}
