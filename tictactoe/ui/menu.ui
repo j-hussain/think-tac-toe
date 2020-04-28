@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>menu</class>
+    <widget class="QWidget" name="menu">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+            </sizepolicy>
+        </property>
+        <property name="windowTitle">
+            <string>Noughts and Crosses Menu</string>
+        </property>
+        <property name="windowIcon">
+            <iconset>
+                <normaloff>../assets/emoji_x.png</normaloff>../assets/emoji_x.png
+            </iconset>
+        </property>
+        <widget class="QLabel" name="titleLabel">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>10</y>
+                    <width>781</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>18</pointsize>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Play Noughts and Crosses</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="playButton">
+            <property name="geometry">
+                <rect>
+                    <x>610</x>
+                    <y>550</y>
+                    <width>181</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>Play Game</string>
+            </property>
+        </widget>
+        <widget class="QLabel" name="titleLabel2">
+            <property name="geometry">
+                <rect>
+                    <x>10</x>
+                    <y>50</y>
+                    <width>781</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>By Joshua Hawking</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLabel" name="playerLabel">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>80</y>
+                    <width>251</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Who would you like to play as?</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="playAsCross">
+            <property name="geometry">
+                <rect>
+                    <x>280</x>
+                    <y>80</y>
+                    <width>111</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="icon">
+                <iconset>
+                    <normaloff>../assets/emoji_x.png</normaloff>../assets/emoji_x.png
+                </iconset>
+            </property>
+            <property name="iconSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" name="crossLabel">
+            <property name="geometry">
+                <rect>
+                    <x>280</x>
+                    <y>190</y>
+                    <width>111</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Cross</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="playAsNought">
+            <property name="geometry">
+                <rect>
+                    <x>420</x>
+                    <y>80</y>
+                    <width>111</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="icon">
+                <iconset>
+                    <normaloff>../assets/emoji_o.png</normaloff>../assets/emoji_o.png
+                </iconset>
+            </property>
+            <property name="iconSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" name="noughtLabel">
+            <property name="geometry">
+                <rect>
+                    <x>420</x>
+                    <y>190</y>
+                    <width>111</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Nought</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="Line" name="line">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>215</y>
+                    <width>761</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" name="algorithmLabel">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>240</y>
+                    <width>351</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>What algorithm would you like to play against?</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QComboBox" name="algorithmDropdown">
+            <property name="geometry">
+                <rect>
+                    <x>390</x>
+                    <y>240</y>
+                    <width>221</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                </font>
+            </property>
+            <item>
+                <property name="text">
+                    <string>Test</string>
+                </property>
+            </item>
+        </widget>
+        <widget class="QLabel" name="algorithmDescription">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>290</y>
+                    <width>591</width>
+                    <height>61</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.
+                </string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+                <bool>true</bool>
+            </property>
+        </widget>
+        <widget class="Line" name="line_2">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>360</y>
+                    <width>761</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+            </property>
+        </widget>
+        <widget class="QLabel" name="sizeLabel">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>380</y>
+                    <width>291</width>
+                    <height>41</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>What board size would you like to play?</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="play3x3">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>420</y>
+                    <width>111</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="icon">
+                <iconset>
+                    <normaloff>../assets/3x3board.png</normaloff>../assets/3x3board.png
+                </iconset>
+            </property>
+            <property name="iconSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" name="size3x3Label">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>530</y>
+                    <width>111</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>3x3</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="play5x5">
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>420</y>
+                    <width>111</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="icon">
+                <iconset>
+                    <normaloff>../assets/5x5board.png</normaloff>../assets/5x5board.png
+                </iconset>
+            </property>
+            <property name="iconSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" name="size5x5Label">
+            <property name="geometry">
+                <rect>
+                    <x>160</x>
+                    <y>530</y>
+                    <width>111</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>5x5</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" name="play7x7">
+            <property name="geometry">
+                <rect>
+                    <x>300</x>
+                    <y>420</y>
+                    <width>111</width>
+                    <height>110</height>
+                </rect>
+            </property>
+            <property name="text">
+                <string/>
+            </property>
+            <property name="icon">
+                <iconset>
+                    <normaloff>../assets/7x7board.png</normaloff>../assets/7x7board.png
+                </iconset>
+            </property>
+            <property name="iconSize">
+                <size>
+                    <width>100</width>
+                    <height>100</height>
+                </size>
+            </property>
+        </widget>
+        <widget class="QLabel" name="size7x7Label">
+            <property name="geometry">
+                <rect>
+                    <x>300</x>
+                    <y>530</y>
+                    <width>111</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>7x7</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLabel" name="boardSizeDescription">
+            <property name="geometry">
+                <rect>
+                    <x>20</x>
+                    <y>560</y>
+                    <width>591</width>
+                    <height>21</height>
+                </rect>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>12</pointsize>
+                    <weight>50</weight>
+                    <bold>false</bold>
+                </font>
+            </property>
+            <property name="acceptDrops">
+                <bool>true</bool>
+            </property>
+            <property name="text">
+                <string>3x3: Connect 3 symbols in a row to win.</string>
+            </property>
+            <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+                <bool>true</bool>
+            </property>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
